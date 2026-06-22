@@ -1,0 +1,174 @@
+:root {
+  --bg-color: #1a1a1a;
+  --bg-card: #262626;
+  --primary-accent: #A2005D;
+  --secondary-accent: #f3f4f6;
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --border-color: rgba(255, 255, 255, 0.1); /* Subtle border for cards */
+  --shadow-color: rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+/* Header / Navigation Bar Styles */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(26, 26, 26, 0.8); /* #1a1a1a with 80% opacity */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari browser support */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.branding-text {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.branding-text strong {
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links a {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.nav-links a.active {
+  color: var(--primary-accent);
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+  .site-header {
+    padding: 24px 20px;
+  }
+}
+
+.contact-container {
+  position: relative;
+  display: inline-block;
+}
+
+.contact-widget {
+  position: absolute;
+  top: calc(100% + 10px); /* Add space for the arrow */
+  right: 0;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjusted gap for spacing */
+  z-index: 1000;
+  white-space: nowrap;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* Animations */
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutSlideDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.contact-widget.fade-in-slide-up {
+  animation: fadeInSlideUp 0.3s ease-out forwards;
+}
+
+.contact-widget.fade-out-slide-down {
+  animation: fadeOutSlideDown 0.3s ease-out forwards;
+}
+
+/* Arrow for the widget */
+.contact-widget::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: 20px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.email-text {
+  font-family: monospace; /* Kept monospace as it's common for email */
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.btn-copy {
+  background: transparent;
+  border: none;
+  padding: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-copy:hover {
+  color: var(--text-primary);
+  background-color: rgba(var(--secondary-accent-rgb), 0.1); /* Using rgba for hover effect */
+}
+
+.btn-copy svg {
+  width: 18px; /* Slightly larger icons for better visibility */
+  height: 18px;
+}
+
+.btn-copy .check-icon {
+  color: var(--primary-accent);
+}

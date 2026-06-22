@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --bg-color: #1a1a1a;
+  --bg-card: #262626;
+  --primary-accent: #A2005D;
+  --secondary-accent: #f3f4f6;
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --border-radius: 12px;
+}
+
+/* Base Reset & Globals */
+.app-container {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg' stroke='%23252525' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'%3E%3Cpath d='M30,80 C30,30 90,30 90,80 C90,100 80,90 75,100 C70,90 60,100 55,90 C50,100 40,90 35,100 C30,90 30,80 30,80 Z'/%3E%3Ccircle cx='50' cy='55' r='3' fill='%23252525'/%3E%3Ccircle cx='70' cy='55' r='3' fill='%23252525'/%3E%3Cpath d='M55,70 Q60,75 65,70'/%3E%3Cpath d='M170,60 Q200,30 230,60 Q200,90 170,60 Z'/%3E%3Ccircle cx='200' cy='60' r='10'/%3E%3Ccircle cx='200' cy='60' r='3' fill='%23252525'/%3E%3Cpath d='M200,20 v5 M200,95 v5 M160,60 h-5 M245,60 h-5'/%3E%3Cpath d='M310,80 Q320,30 340,60 T370,40'/%3E%3Ccircle cx='370' cy='40' r='6'/%3E%3Ccircle cx='372' cy='38' r='1' fill='%23252525'/%3E%3Cpath d='M375,40 L382,42'/%3E%3Ccircle cx='130' cy='160' r='20'/%3E%3Cpath d='M95,170 Q130,190 165,150'/%3E%3Cpath d='M105,165 Q130,140 155,155'/%3E%3Ccircle cx='125' cy='155' r='2' fill='%23252525'/%3E%3Ccircle cx='140' cy='165' r='1' fill='%23252525'/%3E%3Ccircle cx='270' cy='160' r='18'/%3E%3Cpath d='M270,135 v-5 M270,185 v5 M245,160 h-5 M295,160 h5 M252,142 l-4,-4 M288,178 l4,4 M252,178 l-4,4 M288,142 l4,-4'/%3E%3Ccircle cx='263' cy='155' r='2' fill='%23252525'/%3E%3Ccircle cx='277' cy='155' r='2' fill='%23252525'/%3E%3Cpath d='M263,165 Q270,172 277,165'/%3E%3Crect x='35' y='240' width='50' height='40' rx='8'/%3E%3Cpath d='M50,240 L40,225 M70,240 L80,225'/%3E%3Ccircle cx='40' cy='225' r='3'/%3E%3Ccircle cx='80' cy='225' r='3'/%3E%3Ccircle cx='50' cy='255' r='2' fill='%23252525'/%3E%3Ccircle cx='70' cy='255' r='2' fill='%23252525'/%3E%3Cpath d='M55,265 h10'/%3E%3Cpath d='M200,260 m0,-5 a5,5 0 1,1 -5,5 a10,10 0 1,1 15,-10 a15,15 0 1,1 -25,15 a20,20 0 1,1 35,-20 a25,25 0 1,1 -45,25'/%3E%3Cpath d='M340,230 L360,250 L340,290 L320,250 Z'/%3E%3Cpath d='M340,230 L340,290 M320,250 L360,250 M328,242 L352,242'/%3E%3Cpath d='M365,235 v-5 M370,230 h-5'/%3E%3Cpath d='M105,340 h50 v40 h-50 z'/%3E%3Cpath d='M105,360 l10,-10 l10,10 l10,-10 l10,10 l10,-10'/%3E%3Ccircle cx='120' cy='350' r='3' fill='%23252525'/%3E%3Ccircle cx='140' cy='350' r='3' fill='%23252525'/%3E%3Cpath d='M245,360 C245,330 295,330 295,360 Z'/%3E%3Cpath d='M260,360 v20 h20 v-20'/%3E%3Ccircle cx='260' cy='345' r='3'/%3E%3Ccircle cx='280' cy='350' r='4'/%3E%3Ccircle cx='270' cy='355' r='2'/%3E%3C/svg%3E");
+  background-size: 400px 400px;
+  background-attachment: fixed;
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-container {
+  padding: 0 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-accent);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: opacity 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Shared components used across multiple sections (Avatar, Buttons) */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #A2005D, var(--primary-accent));
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.btn-primary {
+  background-color: var(--primary-accent);
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  .layout-container {
+    padding: 0 20px;
+  }
+}
