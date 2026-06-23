@@ -202,3 +202,80 @@
 .btn-copy .check-icon {
   color: var(--primary-accent);
 }
+
+/* Mobile Navigation Menu */
+.mobile-nav-menu {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-menu-trigger {
+    cursor: pointer;
+  }
+
+  .mobile-nav-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(26, 26, 26, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 0;
+    z-index: 5;
+  }
+
+  .mobile-nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .mobile-nav-menu ul li {
+    padding: 15px 0;
+  }
+
+  .mobile-nav-menu ul li a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .mobile-nav-menu ul li a.active {
+    color: var(--primary-accent);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.mobile-nav-menu.slide-in-down {
+  animation: slideInDown 0.3s ease-out forwards;
+}
+
+.mobile-nav-menu.slide-out-up {
+  animation: slideOutUp 0.3s ease-out forwards;
+}

@@ -10,6 +10,28 @@ function NavBar() {
   const [animationClass, setAnimationClass] = useState('');
   const email = 'zivejoshua7@gmail.com';
   const [hideTimeoutId, setHideTimeoutId] = useState<number | null>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menuAnimationClass, setMenuAnimationClass] = useState('');
+
+  const openMenu = () => {
+    setIsMenuOpen(true);
+    setMenuAnimationClass('slide-in-down');
+  };
+
+  const closeMenu = () => {
+    setMenuAnimationClass('slide-out-up');
+    setTimeout(() => {
+      setIsMenuOpen(false);
+    }, 300); // Animation duration should match CSS
+  };
+
+  const toggleMenu = () => {
+    if (isMenuOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  };
 
   const handleCopy = () => {
     navigator.clipboard.writeText(email).then(() => {
@@ -58,7 +80,7 @@ function NavBar() {
 
   return (
     <header className="site-header">
-      <div className="branding">
+      <div className="branding mobile-menu-trigger" onClick={toggleMenu}>
                 <img src={profileImage} alt="Joshua Zive" className="avatar" />
         <div className="branding-text">
           <strong>Joshua Zive</strong> | Code & Commentary
@@ -95,6 +117,15 @@ function NavBar() {
           </div>
         )}
       </div>
+      {isMenuOpen && (
+        <nav className={`mobile-nav-menu ${menuAnimationClass}`}>
+          <ul>
+            <li><NavLink to="/" end onClick={closeMenu} className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink></li>
+            <li><NavLink to="/articles" onClick={closeMenu} className={({ isActive }) => isActive ? "active" : ""}>Articles</NavLink></li>
+            <li><Link to="/#topics" onClick={closeMenu}>Topics</Link></li>
+          </ul>
+        </nav>
+      )}
     </header>
   );
 }
