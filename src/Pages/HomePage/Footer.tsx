@@ -19,7 +19,7 @@ function Footer() {
         </div>
         <div className="footer-links" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '8px', marginTop: '12px' }}>
           <a href={resumePDF} target="_blank" rel="noopener noreferrer">Resume</a>
-          <a href="https://github.com/JoshuaZive" target="_blank" rel="noopener noreferrer">Portfolio</a>
+          <a href="https://github.com/zivejosh" target="_blank" rel="noopener noreferrer">Portfolio</a>
           <a href="/articles">Blog</a>
         </div>
       </div>

@@ -40,7 +40,7 @@ This first became readily apparent to me around late 2025. Instagram's UI used t
 
 This update enraged me beyond compare. It was like opening Pandora's box. I already knew that reels and the "TikTok" format were bad for me. But I didn't care because it felt like a choice. I wanted to use reels, so I used reels. Now, however, it felt glaringly obvious that Instagram was baiting me. They were forcing me into their addictive loop for as long as they could keep me there.
 
-Then I started noticing it everywhere. Reels sent by a friend would continually swipe infinitely; my feed was 90% reels keeping me in the loop; even my personal feed was getting recommendations from accounts I didn't follow, just to keep me engaged. Essentially, I began to realize how these social media companies effectively design their entire software to keep users glued to their screens for as long as humanly possible. That fact doesn't just apply to the format they deliver content through; it pertains to the very nature of the software itself—how they get you hooked into that addictive loop to begin with.
+Then I started noticing it everywhere. Reels sent by a friend would continually swipe infinitely; my feed was 90% reels keeping me in the loop; even my personal feed was getting recommendations from accounts I didn't follow, just to keep me engaged. Essentially, I began to realize how these social media companies effectively design their entire software to keep users glued to their screens for as long as humanly possible. That fact doesn't just apply to the format they deliver content through; it pertains to the very nature of the software itself how they get you hooked into that addictive loop to begin with.
 
 ### My Initial Solution
 
