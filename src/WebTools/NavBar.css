@@ -61,12 +61,42 @@
 }
 
 /* Responsiveness */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 24px 20px;
+  }
+
+  .branding-text {
+    display: none; /* Hide text on medium screens */
+  }
+
+  .nav-links {
+    position: static;
+    transform: none;
+    gap: 20px; /* Adjust gap for smaller screens */
+  }
+}
+
 @media (max-width: 600px) {
   .nav-links {
     display: none;
   }
   .site-header {
     padding: 24px 20px;
+  }
+
+  .branding-text {
+    display: none; /* Ensure text is hidden on small screens */
+  }
+
+  .avatar {
+    width: 40px; /* Ensure avatar size is consistent */
+    height: 40px;
+  }
+
+  .btn-primary {
+    padding: 8px 12px; /* Smaller button padding */
+    font-size: 0.8rem;
   }
 }
 

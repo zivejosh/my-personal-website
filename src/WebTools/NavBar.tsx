@@ -59,7 +59,7 @@ function NavBar() {
   return (
     <header className="site-header">
       <div className="branding">
-        <img src={profileImage} alt="Joshua Zive" className="avatar" />
+                <img src={profileImage} alt="Joshua Zive" className="avatar" />
         <div className="branding-text">
           <strong>Joshua Zive</strong> | Code & Commentary
         </div>
