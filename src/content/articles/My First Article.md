@@ -84,7 +84,7 @@ Well, to keep in contact with people, I do this ancient thing called "texting th
 
 This whole concept (albeit very rudimentary) has opened me up emotionally. I'm not afraid to talk about what's going on with me. I don't feel obligated to hide behind a social media mask anymore, nor do I feel tied to my phone in a way that felt obligatory before.
 
-I've freed up around 4 hours daily on my phone. Without mindlessly scrolling, I read more, I learn more, I love more, and I feel more. I don't feel like the world is constantly crashing down on me, because I'm no longer being pushed to believe it is. I have optimism and hope—and with social media, that wasn't something I used to have.
+I've freed up around 4 hours daily on my phone. Without mindlessly scrolling, I read more, I learn more, I love more, and I feel more. I don't feel like the world is constantly crashing down on me, because I'm no longer being pushed to believe it is. I have optimism and hope and with social media, that wasn't something I used to have.
 
 So anyway, do what you want with what I've said here today. I've laid out my feelings on the subject in its entirety. My contact info is above if you want to discuss this further, but I implore you to really think about what I've said.
 
