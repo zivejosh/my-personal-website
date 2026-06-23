@@ -65,8 +65,13 @@ function Categories() {
           <div
             key={category.label}
             className="category-container"
-            onMouseEnter={() => setSelectedCategory(category.label)}
-            onMouseLeave={() => setSelectedCategory(null)}
+            onClick={() => {
+              if (selectedCategory === category.label) {
+                setSelectedCategory(null);
+              } else {
+                setSelectedCategory(category.label);
+              }
+            }}
           >
             <AnimatePresence>
               {selectedCategory === category.label && (
