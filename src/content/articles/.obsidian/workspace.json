@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "My First Article"
             }
+          },
+          {
+            "id": "889565fb7e77bad5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "My First Article.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "My First Article"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -183,9 +198,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "85a21e320e8e16eb",
+  "active": "889565fb7e77bad5",
   "lastOpenFiles": [
-    "Article 2.md",
-    "My First Article.md"
+    "The Illusion of Ownership.md",
+    "My First Article.md",
+    "Article 2.md"
   ]
 }
